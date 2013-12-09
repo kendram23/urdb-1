@@ -1,0 +1,7 @@
+
+<% @movies.each do |movie| %>
+	<div><%= link_to movie.title, movie_path(movie.id) %></br>
+	<img src="<%= movie.gif %>" /></br>
+	<%= movie.description %></br>
+</div>
+<% end %>
