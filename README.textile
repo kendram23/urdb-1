@@ -1,0 +1,19 @@
+== README
+
+h2. Ruby on Rails
+
+This application requires:
+
+* Ruby version 2.0.0
+* Rails version 4.0.1
+
+h2. Database
+
+This application uses SQLite with ActiveRecord.
+
+h2. Development
+
+* Template Engine: ERB
+* Testing Framework: RSpec
+* Front-end Framework: Twitter Bootstrap 3.0 (Sass)
+* Form Builder: None
