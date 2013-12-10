@@ -21,13 +21,17 @@ class MoviesController < ApplicationController
 		@movie = Movie.find(params[:id])
 	end
 
-	# def update
-		
-	# end
+	def update
+		@movie = Movie.find(params[:id])
+		@movie.update(movie_params)
+		redirect_to @movie
+	end
 
-	# def destroy
-
-	# end
+	def destroy
+		@movie = Movie.find(params[:id])
+		@movie.destroy
+		redirect_to root_path
+	end
 
 	private
 

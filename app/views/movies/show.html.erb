@@ -2,5 +2,9 @@
 
 <div><%= @movie.title %></br>
 	<img src="<%= @movie.gif %>" /></br>
-	<iframe width="560" height="315" src="<%= @movie.trailer%>" frameborder="0" allowfullscreen></iframe></br>
+	<iframe width="560" height="315" src="//www.youtube.com/embed/<%= @movie.trailer%>" frameborder="0" allowfullscreen></iframe></br>
 	<%= @movie.description %></br>
+
+	<%= link_to "Edit Movie", edit_movie_path(@movie.id) %>
+</br>
+<%= link_to "Delete Movie", @movie, :method => :delete, :confirm => "Are you sure you want to delete this movie?" %>
